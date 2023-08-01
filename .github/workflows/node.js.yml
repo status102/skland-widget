@@ -28,8 +28,7 @@ jobs:
         git add .
         git commit -m "update" -a
       
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Push to GitHub
+      uses: EndBug/add-and-commit@v7.2.1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: action-generate
+          branch: action-generate
