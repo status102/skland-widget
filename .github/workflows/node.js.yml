@@ -20,14 +20,7 @@ jobs:
     - run: |
         yarn install
         yarn run build
-        
-    - name: commit
-      run: |
-        git config --global user.email status102@outlook.com
-        git config --global user.name status102_action
-        git add .
-        git commit -m "update" -a
-      
+          
     - name: Push to GitHub
       uses: EndBug/add-and-commit@v7.2.1
       with:
