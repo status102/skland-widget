@@ -31,4 +31,4 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@action-generate
       with:
-        github_token: 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
+        github_token: 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
