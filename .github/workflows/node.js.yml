@@ -27,8 +27,8 @@ jobs:
         git config --global user.name status102_action
         git add .
         git commit -m "update" -a
-        
+      
     - name: Push changes
-      uses: ad-m/github-push-action@action-generate
+      uses: ad-m/github-push-action@master
       with:
-        github_token: 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
+        branch: action-generate
