@@ -20,3 +20,15 @@ jobs:
     - run: |
         yarn install
         yarn run build
+        
+    - name: commit
+      run: |
+        git config --global user.email status102@outlook.com
+        git config --global user.name status102_action
+        git add .
+        git commit -m "update" -a
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@action-generate
+      with:
+        github_token: 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
